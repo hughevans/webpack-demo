@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "webpack",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --content-base dist/ --hot --inline",
     "clean": "rm -rf dist",
     "build": "npm run clean && webpack",
     "deploy": "npm run build && gh-pages -d dist -m \"Updates --skip-ci\""
@@ -24,7 +24,7 @@
     "autoprefixer-core": "^5.1.11",
     "babel-core": "^5.2.17",
     "babel-loader": "^5.0.0",
-    "css-loader": "^0.15.1",
+    "css-loader": "^0.16.0",
     "ejs": "^2.3.1",
     "extract-text-webpack-plugin": "^0.8.1",
     "file-loader": "^0.8.4",
